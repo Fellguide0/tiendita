@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
-public class NewJFrame extends javax.swing.JFrame {
+public class NewJFrame extends javax.swing.JFrame implements Printable{
 
    /**
     * Creates a new instance of NewJFrame.
@@ -87,6 +87,7 @@ public class NewJFrame extends javax.swing.JFrame {
  /**
 * Prints the bill with detailed information about the items and total.
  */
+   @Override
  public void bill_print(){
  
         try {
