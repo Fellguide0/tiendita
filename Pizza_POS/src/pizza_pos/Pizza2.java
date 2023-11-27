@@ -6,16 +6,10 @@ package pizza_pos;
 
 /**
  *
- * @author
+ * @author jade
  */
-abstract class Product {
-    String nombre;
-    double precio;
-    
-    Product(String nombre, double precio){
-        this.nombre = nombre;
-        this.precio = precio;
+class Pizza2 extends Products {
+    public Pizza2() {
+        super("Pizza_2", 3.00);
     }
-    
-    abstract void imprimirDetalles();
 }

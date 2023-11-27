@@ -17,28 +17,46 @@ public class NewJFrame extends javax.swing.JFrame {
     public NewJFrame() {
         initComponents();
     }
-
- public void addTable(String Name, Double Price){
- 
- 
+        public void addTable(Products pizza) {
         String Qty = JOptionPane.showInputDialog("Enter Qty");
         Double tqty = Double.valueOf(Qty);
-        Double Tot_Price = Price * tqty ;
-        
-     DecimalFormat df = new DecimalFormat("00.00");
-     String d11 = df.format(Tot_Price);
-       
-        
+        Double Tot_Price = pizza.getPrice() * tqty;
+
+        DecimalFormat df = new DecimalFormat("00.00");
+        String d11 = df.format(Tot_Price);
+
         DefaultTableModel dt = (DefaultTableModel) jTable1.getModel();
-        
+
         Vector v = new Vector();
-        v.add(Name);
+        v.add(pizza.getName());
         v.add(Qty);
         v.add(d11);
         dt.addRow(v);
-        
-      cart_cal();
- }   
+
+        cart_cal();
+    }
+
+// public void addTable(String Name, Double Price){
+// 
+// 
+//        String Qty = JOptionPane.showInputDialog("Enter Qty");
+//        Double tqty = Double.valueOf(Qty);
+//        Double Tot_Price = Price * tqty ;
+//        
+//     DecimalFormat df = new DecimalFormat("00.00");
+//     String d11 = df.format(Tot_Price);
+//       
+//        
+//        DefaultTableModel dt = (DefaultTableModel) jTable1.getModel();
+//        
+//        Vector v = new Vector();
+//        v.add(Name);
+//        v.add(Qty);
+//        v.add(d11);
+//        dt.addRow(v);
+//        
+//      cart_cal();
+// }   
     
  public void cart_cal(){
  
@@ -437,51 +455,51 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        addTable("Pizza_1",2.00 );
+        addTable(new Pizza1());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       addTable("Pizza_2",3.00 );
+       addTable(new Pizza2());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        addTable("Pizza_3",4.00 );
+        addTable(new Pizza3());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        addTable("Pizza_4",5.00 );
+        addTable(new Pizza4());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        addTable("Pizza_5",2.70 );
+        addTable(new Pizza5());
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        addTable("Pizza_6",7.00 );
+        addTable(new Pizza6());
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        addTable("Pizza_7",2.00 );
+        addTable(new Pizza7());
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-       addTable("Pizza_8",2.60 );
+       addTable(new Pizza8());
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        addTable("Pizza_9",2.20 );
+        addTable(new Drink1());
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        addTable("Pizza_10",2.90 );
+        addTable(new Drink2());
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        addTable("Pizza_11",2.70 );
+        addTable(new Drink3());
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        addTable("Pizza_12",2.30 );
+        addTable(new Drink4());
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
