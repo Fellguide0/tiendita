@@ -13,10 +13,17 @@ import javax.swing.table.DefaultTableModel;
 
 public class NewJFrame extends javax.swing.JFrame {
 
-   
+   /**
+    * Creates a new instance of NewJFrame.
+     */
     public NewJFrame() {
         initComponents();
     }
+    /**
+     * Adds a pizza to the order table.
+     *
+     * @param pizza The pizza product to be added.
+     */
         public void addTable(Products pizza) {
         String Qty = JOptionPane.showInputDialog("Enter Qty");
         Double tqty = Double.valueOf(Qty);
@@ -57,7 +64,10 @@ public class NewJFrame extends javax.swing.JFrame {
 //        
 //      cart_cal();
 // }   
-    
+
+   /**
+     * Calculates and updates the total price of items in the cart.
+     */
  public void cart_cal(){
  
   int numofrow = jTable1.getRowCount();
@@ -74,7 +84,9 @@ public class NewJFrame extends javax.swing.JFrame {
      
   
  }
- 
+ /**
+* Prints the bill with detailed information about the items and total.
+ */
  public void bill_print(){
  
         try {
