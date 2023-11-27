@@ -10,6 +10,6 @@ package pizza_pos;
  */
 class Pizza2 extends Products {
     public Pizza2() {
-        super("Pizza_2", 3.00);
+        super("MTL", 3.00);
     }
 }

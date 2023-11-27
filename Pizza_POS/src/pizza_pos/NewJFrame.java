@@ -78,12 +78,12 @@ public class NewJFrame extends javax.swing.JFrame {
  public void bill_print(){
  
         try {
-            bill.setText("                         The techinbox Pizza Hut \n");
-            bill.setText(bill.getText() + "\t589/ King Road, \n");
-            bill.setText(bill.getText() + "\tColombo, Srilanka, \n");
-            bill.setText(bill.getText() + "\t+9411 123456789, \n");
+            bill.setText("                         Totelini's Pizza \n");
+            bill.setText(bill.getText() + "\t1972/ K. West Street, \n");
+            bill.setText(bill.getText() + "\tChicago, Ilinois, \n");
+            bill.setText(bill.getText() + "\t+(787) 417-8605, \n");
             bill.setText(bill.getText() + "----------------------------------------------------------------\n");
-            bill.setText(bill.getText() + " Iteam \tQty \tPrice \n");
+            bill.setText(bill.getText() + " Item \tQuantity \tPrice \n");
             bill.setText(bill.getText() + "----------------------------------------------------------------\n");
             
             DefaultTableModel df = (DefaultTableModel) jTable1.getModel();
@@ -101,9 +101,9 @@ public class NewJFrame extends javax.swing.JFrame {
             bill.setText(bill.getText() + "Cash :\t"+Cash.getText()+"\n");
             bill.setText(bill.getText() + "Ballance :\t"+Bal.getText()+"\n");
             bill.setText(bill.getText() + "====================================\n");
-            bill.setText(bill.getText() +"                     Thanks For Your Business...!"+"\n");
+            bill.setText(bill.getText() +"                     Grazie per l'acquisto, tornate presto...!"+"\n");
             bill.setText(bill.getText() + "----------------------------------------------------------------\n");
-            bill.setText(bill.getText() +"                     Software by Techinbox"+"\n");
+            bill.setText(bill.getText() +"                     Software by ZettaByte Solutions"+"\n");
             
             
             bill.print();
@@ -151,7 +151,7 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
-        jButton1.setText("Pizza 2");
+        jButton1.setText("MTL");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -159,7 +159,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(255, 51, 51));
-        jButton2.setText("Pizza 1");
+        jButton2.setText("Hawaiian Paradise");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -167,7 +167,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(0, 204, 204));
-        jButton3.setText("Pizza 3");
+        jButton3.setText("Conutry Style ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -175,7 +175,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton4.setBackground(new java.awt.Color(102, 102, 0));
-        jButton4.setText("Pizza 4");
+        jButton4.setText("Double Cheese");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -183,7 +183,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton5.setBackground(new java.awt.Color(0, 102, 51));
-        jButton5.setText("Pizza 8");
+        jButton5.setText("Supreme ");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -191,7 +191,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton6.setBackground(new java.awt.Color(102, 0, 102));
-        jButton6.setText("Pizza 7");
+        jButton6.setText("Margherita");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -199,7 +199,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton7.setBackground(new java.awt.Color(102, 255, 102));
-        jButton7.setText("Pizza 6");
+        jButton7.setText("West Special");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -207,7 +207,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton8.setBackground(new java.awt.Color(51, 51, 255));
-        jButton8.setText("Pizza 5");
+        jButton8.setText("Chicago Style ");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -215,7 +215,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton9.setBackground(new java.awt.Color(204, 51, 255));
-        jButton9.setText("Pizza 9");
+        jButton9.setText("Mount n' Dew");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -223,7 +223,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton10.setBackground(new java.awt.Color(255, 102, 0));
-        jButton10.setText("Pizza 10");
+        jButton10.setText("Doctor Pepper");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -231,7 +231,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton11.setBackground(new java.awt.Color(0, 51, 51));
-        jButton11.setText("Pizza 12");
+        jButton11.setText("Diet Coke");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
@@ -239,7 +239,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton12.setBackground(new java.awt.Color(255, 255, 0));
-        jButton12.setText("Pizza 11");
+        jButton12.setText("awa");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -435,7 +435,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

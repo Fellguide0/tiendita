@@ -11,6 +11,6 @@ package pizza_pos;
 // Derived pizza classes
 class Pizza1 extends Products {
     public Pizza1() {
-        super("Pizza_1", 2.00);
+        super("Hawaiian", 2.00);
     }
 }
